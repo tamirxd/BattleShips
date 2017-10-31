@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BattleShipLobby</title>
+    <script src="../../jquery-2.0.3.min.js"></script>
+    <script src="gamelobby.js"></script>
+    <link rel="stylesheet" type="text/css" href="gamelobby.css"/>
+</head>
+<body>
+<div id="LobbyTitle" style="text-align:center;">
+    <p>Lobby</p>
+</div>
+<div id="playerName" style="text-align:center; padding-bottom: 50px; font-size: 30px"></div>
+<div id="errorMessages"></div>
+
+<div class="TableContent" id="listOfPlayersDiv">
+    <table class="TableContent" id="listOfPlayers">
+        <tr class="ShowTables">
+            <th class="ShowTables">Player Index</th>
+            <th class="ShowTables">Player name</th>
+        </tr>
+    </table>
+    <table class="TableContent" id="listOfPlayersTable">
+
+    </table>
+</div>
+<br> <br> <br> <br>
+<div class="TableContent" id="listCurrentGamesDiv">
+    <table id="listCurrentGamesTable">
+        <tr class="ShowTables">
+            <th width="20%" class="ShowTables">Game name</th>
+            <th width="15%" class="ShowTables">Created By User</th>
+            <th width="10%" class="ShowTables">Board Size</th>
+            <th width="15%" class="ShowTables">Current Signed Players</th>
+            <th width="10%" class="ShowTables">Game Type</th>
+            <th width="15%" class="ShowTables">Enter game</th>
+            <th width="15%" class="ShowTables">Delete game</th>
+        </tr>
+    </table>
+    <table class="TableContent" id="roomTable"></table>
+</div>
+<br> <br>
+<div id="LobbyButtons" style="float: left;">
+    <div id="first" style="float: left;">
+        <form id="uploadFileForm" method="POST" action="../../gamefiles/upload" enctype="multipart/form-data">
+            <input id="chooseGameFile" type="file" name="loadGameFile" accept="xml"
+                   class="inputFile">
+            <label for="chooseGameFile">Choose a file</label>
+            <input id="submitChooseGameFile" type="submit" value="Upload Game File" disabled=true class="button">
+            <input name="roomName" type="text" value="Room Name" required>
+        </form>
+        <div id="uploadResult"></div>
+    </div>
+    <div id="third" style="float: left;">
+        <form method="GET" action="../../LobbyLogout">
+            <input type="submit" value="Logout" onchange="enableSubmit()" class="button"
+                   style=" margin-left: 4px;"/>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

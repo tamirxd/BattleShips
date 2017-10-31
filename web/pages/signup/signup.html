@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="../../jquery-2.0.3.min.js"></script>
+<script src="signup.js"></script>
+<link rel="stylesheet" type="text/css" href="signup.css"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body background="../../resources/background2.jpg" style="background-repeat: no-repeat;background-size: 100% 100vh;">
+<div id=SignUpDiv>
+    <h1>Sign Up</h1>
+    <form id="signupForm" method="GET" action="../../usersignup">
+        Enter your unique ID:<br>
+        <label>
+            <input id="userNameInput" type="text" name="userName" width="70px" height="40px" required>
+        </label>
+
+        <input id="signButton" type="submit" value="Sign Up" class="button">
+    </form>
+    <div id="signResult"></div>
+</div>
+</body>
+</html>

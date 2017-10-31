@@ -1,0 +1,243 @@
+#top {
+    position: relative;
+    top: 2px;
+    color: white;
+    background-size: 100%;
+}
+
+#exitGame {
+    float: right;
+    margin: 20px 40px 10px 10px;
+}
+
+html {
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    background: linear-gradient(to right, #26a0da, #314755);
+}
+
+#boardsdiv {
+    width: 75%;
+    float: left;
+}
+
+#ShipsBoard, #HitsBoard {
+    border-radius: 4px;
+    box-shadow: -2px -2px 5px black;
+    border: 2px #424fff;
+    background: -webkit-linear-gradient(right, #5786c4, #3758c4);
+    background: linear-gradient(to left, #5786c4, #3758c4);
+}
+
+table.boards {
+    width: 45%;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 5px;
+}
+
+#bottom {
+    padding: 5px;
+    position: relative;
+    clear: left;
+    top: 3px;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#clockDiv {
+    margin: auto;
+    width: 14%;
+}
+
+#mineDiv {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+#tablesDiv {
+    margin: auto;
+    width: 50%;
+}
+
+#playerShipLeft, #EnemyShipLeft {
+    margin-left: 5px;
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.tableSpan {
+    font-size: 14px;
+    color: black;
+}
+
+tr, td.ShipLeftTable {
+    padding: 2px;
+}
+
+th.staticsTable {
+    height: 60%;
+}
+
+tr, td.staticsTable {
+    border-collapse: collapse;
+}
+
+table.staticsTable {
+    margin: 0px 10px 0px 10px;
+    display: inline-block;
+    border-collapse: collapse;
+
+}
+
+ul {
+    text-align: left;
+    color: #000000;
+    list-style: none;
+}
+
+/* to generate a new bullet - so itll have an individual color*/
+li::before {
+    content: "•";
+    color: #35ff00;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.ShipLeftTable, .staticsTable {
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.ShipLeftTable, .staticsTable {
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    border-radius: 4px;
+    color: black;
+    font-size: 14px;
+}
+
+body {
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    background: linear-gradient(to right, #26a0da, #314755);
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    overflow: auto;
+    position: relative;
+    top: 3px;
+}
+
+section {
+    margin: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+div.staticsTable, div.ShipLeftTable {
+    height: 50%;
+    width: 100%;
+}
+
+#chatDiv {
+    background: -webkit-linear-gradient(right, #5786c4, #3758c4);
+    background: linear-gradient(to left, #5786c4, #3758c4);
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+
+    /*round border*/
+    border: 2px #424fff;
+    border-radius: 5px;
+    box-shadow: -2px -2px 30px black;
+    position: relative;
+    left: 3px;
+    width: 25%;
+    height: 450px;
+    float: left;
+    overflow: auto;
+}
+
+#chatarea {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 46px;
+}
+
+#EnemyShipLeft {
+    margin-right: 2px;
+}
+
+#enemyShipsLeftSpan {
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+input[type=text] {
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    background-color: #008CBA;
+    border: #ffffff;
+    border-bottom-width: 2px;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+}
+
+.button:hover, .button:focus, .button:active {
+    background-color: #2098D1;
+    color: white;
+}
+
+/* Custom scroll bar*/
+::-webkit-scrollbar {
+    width: 6px;
+    overflow: auto;
+    border-color: black;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #2098D1;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #256299;
+}
+
+#fillMineAmount {
+    background-color: inherit;
+}

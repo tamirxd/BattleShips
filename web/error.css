@@ -1,0 +1,15 @@
+body {
+    background-image: url("resources/error_simpsons.jpg");
+    background-size: cover;
+}
+
+div {
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+    color: #424fff;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 1px black;
+    -webkit-text-stroke: 1.0px #000000;
+
+}

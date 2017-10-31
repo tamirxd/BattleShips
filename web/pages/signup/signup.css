@@ -1,0 +1,48 @@
+#SignUpDiv {
+    margin-left: 350px;
+    margin-top: 200px;
+    width: 300px;
+    height: 100px;
+    text-decoration-color: lavenderblush;
+    color: #444466;
+    font-size: larger;
+}
+
+#signButton {
+
+    width: 120px;
+    height: 30px;
+    color: #444466;
+    font-size: medium;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    border: #ffffff;
+    border-bottom-width: 2px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+}
+
+.button:hover, .button:focus, .button:active {
+    background-color: #9babff;
+    color: #444466;
+}
+
+#signResult {
+    color: #444466;
+    font-size: medium;
+    margin-top: 2px;
+}

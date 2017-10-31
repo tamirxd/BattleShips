@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BattleShipGameRoom</title>
+    <script src="../../jquery-2.0.3.min.js"></script>
+    <script src="gameroom.js"></script>
+    <script src="gameroomchat.js"></script>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "gamroom.css" />
+</head>
+
+<body background="../../resources/background3.jpg" style="background-repeat: no-repeat;background-size: 100% 100vh;">
+<div id="top">
+    <form>
+        <input id="exitGame" type="button" value="Quit game" class="button" onclick="logoutAction()"/>
+    </form>
+    <h2 id="header"></h2>
+    <h3 id="PlayerTurn"></h3>
+</div>
+<div id="body">
+    <div id="boardsdiv">
+        <table class="boards" id="ShipsBoard">
+            <caption style="font-size: larger;font-style: oblique">Ships board</caption>
+        </table>
+        <table class="boards" id="HitsBoard">
+            <caption style="font-size: larger;font-style: oblique">Hits Board</caption>
+        </table>
+    </div>
+    <div id="chatDiv">
+        <h4>Chat</h4>
+        <ul id="userslist"></ul>
+        <div id="chatarea"></div>
+        <form id="chatform">
+            <input type="text" id="userString" name="userString" required/>
+            <input type="submit" value="Send" class="button" id="chatButton"/>
+        </form>
+    </div>
+</div>
+<div id="bottom">
+    <div id="clockDiv">
+        <table>
+            <tr>
+                <th>Clock:</th>
+            </tr>
+            <tr>
+                <td id="fillMinutes">M</td>
+                <td id="fillSeconds">S</td>
+            </tr>
+        </table>
+    </div>
+    <div id="tablesDiv">
+        <div id="mineDiv">
+            <p id="fillMineAmount"></p>
+            <div id="fillMineImg"></div>
+        </div>
+        <table class="ShipLeftTable" id="playerShipLeft">
+            <span class="tableSpan">Player ships left</span>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">horizontal</td>
+                <td class="ShipLeftTable" id="fillHorizontal">X</td>
+            </tr>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">vertical</td>
+                <td class="ShipLeftTable" id="fillVertical">X</td>
+            </tr>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">L Shape</td>
+                <td class="ShipLeftTable" id="fillLShape">X</td>
+            </tr>
+        </table>
+        <table class="staticsTable" id="staticsTable">
+            <span class="tableSpan">Player statics</span>
+            <tr>
+                <th class="staticsTable">Score</th>
+                <th class="staticsTable">Hits</th>
+                <th class="staticsTable">Misses</th>
+                <th class="staticsTable">Average turn time</th>
+                <th class="staticsTable">Turns played</th>
+            </tr>
+            <td class="staticsTable" id="fillScore">X</td>
+            <td class="staticsTable" id="fillHits">X</td>
+            <td class="staticsTable" id="fillMiss">X</td>
+            <td class="staticsTable" id="fillAvTurnTime">X</td>
+            <td class="staticsTable" id="fillTurnsPlayed">X</td>
+            </tr>
+        </table>
+        <table class="ShipLeftTable" id="EnemyShipLeft">
+            <span id="enemyShipsLeftSpan" class="tableSpan">Enemy ships left</span>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">horizontal</td>
+                <td class="ShipLeftTable" id="fillHorizontalEnemy">X</td>
+            </tr>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">vertical</td>
+                <td class="ShipLeftTable" id="fillVerticalEnemy">X</td>
+            </tr>
+            <tr class="ShipLeftTable">
+                <td class="shipTypeTD">L Shape</td>
+                <td class="ShipLeftTable" id="fillLShapeEnemy">X</td>
+            </tr>
+        </table>
+        <table class="staticsTable" id="enemyStaticsTable">
+            <span id="enemyStaticsSpan" class="tableSpan">Enemy statics</span>
+            <tr>
+                <th class="staticsTable">Score</th>
+                <th class="staticsTable">Hits</th>
+                <th class="staticsTable">Misses</th>
+                <th class="staticsTable">Average turn time</th>
+                <th class="staticsTable">Turns played</th>
+            </tr>
+            <td class="staticsTable" id="EnemyfillScore">X</td>
+            <td class="staticsTable" id="EnemyfillHits">X</td>
+            <td class="staticsTable" id="EnemyfillMiss">X</td>
+            <td class="staticsTable" id="EnemyfillAvTurnTime">X</td>
+            <td class="staticsTable" id="EnemyfillTurnsPlayed">X</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

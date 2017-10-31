@@ -1,0 +1,12 @@
+#gameStart {
+    margin-left: 300px;
+    margin-top: 300px;
+    width: 300px;
+    height: 100px;
+    background-color: #444466;
+    text-decoration-color: lavenderblush;
+    box-shadow: 8px 10px 16px 0 rgba(0, 0, 0, 5.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #91ffe2;
+    font-size: larger;
+    cursor: pointer;
+}
