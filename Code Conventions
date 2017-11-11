@@ -1,1 +1,5 @@
 
+Code conventions: Prefix is added to variable names, as follows:
+
+Readonly members: r_ , Class Members: m_ , Constans: k_ , Input relevant parameter: i_ , 
+Output relevant parameter: o_ , Input and Output relevant parameter: io_ .
