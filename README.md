@@ -8,7 +8,7 @@ Features: 1. Unique id user signup 2. Game creation and deletion 3. Auto updated
 The classic Battleships game, in 2 game types:
 1. Basic -  Normal Battleship game, each successful attack grants the player with 1 point. Only row and column ships available.
 
-2.Advance - The basic type with extras: A) L Shape ships is available for deployment.
+2. Advance - The basic type with extras: A) L Shape ships is available for deployment.
                                         B) Mines are avilable for each player - Mines are hidden from the enemy and behave as an attack
                                            reflectors.
                                         C) In this game type, only destroyed ships grants points.
